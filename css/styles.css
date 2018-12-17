@@ -85,11 +85,15 @@ html {
     }
     /* Elements */
     #moon {
+        bottom: 50px;
         width: 200px;
         height: 200px;
     }
     #scroll {
         width: 100px;
+    }
+    #section-1, #section-2, #section-3, #section-4 {
+        margin-top: 300px;
     }
 
 }  
@@ -111,9 +115,7 @@ html {
         width: 120px;
         height: 120px;
     }
-    #section-1, #section-2, #section-3, #section-4 {
-        margin-top: 400px;
-    }
+
 }  
 
 /* Animation */
