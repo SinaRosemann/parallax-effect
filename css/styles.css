@@ -83,10 +83,7 @@ html {
         font-size: 18px;
         letter-spacing: 11px;
         }
-    /* Sections */
-    #section-content {
-        max-width: 400px;
-    }
+
     /* Elements */
     #moon {
         width: 200px;
@@ -96,7 +93,11 @@ html {
         width: 100px;
     }
     #section-1, #section-2, #section-3, #section-4 {
-        margin-top: 300px;
+        margin-top: 100px !important;
+    }
+    #section-stone {
+        width: auto;
+        height: 300px; 
     }
 
 }  
@@ -110,9 +111,11 @@ html {
         letter-spacing: 8px;
         }
     /* Sections */
-    #section-content {
-        max-width: 160px;
+    #section-background {
+        max-height: 3000px;
     }
+
+    
     /* Elements */
     #moon {
         width: 120px;
