@@ -34,7 +34,8 @@ function parallax () {
 
     if(moonMove.style.bottom > maxheight && windowsize > 992){
         moonMove.style.bottom = maxheight;
-    }else{
+    }
+    if(moonMove.style.bottom > maxheight && windowsize < 992) {
         moonMove.style.bottom = maxmobile;
     }
 
