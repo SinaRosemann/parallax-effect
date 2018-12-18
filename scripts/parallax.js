@@ -25,7 +25,7 @@ function moonFunction() {
 function parallax () {
     var moonMove = document.getElementById("moon");
     var moonheight = document.getElementById("section-moon").clientHeight;
-    var maxheight = moonheight - 150 + "px";
+    var maxheight = moonheight - 250 + "px";
 
     moonMove.style.bottom = (window.pageYOffset /8) + 200 + 'px';
 
