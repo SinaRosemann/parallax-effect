@@ -113,7 +113,7 @@ html {
         }
     /* Sections */
     #section-background {
-        max-height: 3000px;
+        min-height: 3000px;
     }
 
     
