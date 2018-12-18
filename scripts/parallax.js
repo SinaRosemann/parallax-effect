@@ -32,7 +32,7 @@ function parallax () {
 
     moonMove.style.bottom = (window.pageYOffset /8) + 200 + 'px';
 
-    if(moonMove.style.bottom > maxheight && windowsize > 992)) {
+    if(moonMove.style.bottom > maxheight && windowsize > 992){
         moonMove.style.bottom = maxheight;
     }else{
         moonMove.style.bottom = maxmobile;
