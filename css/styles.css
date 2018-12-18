@@ -125,6 +125,14 @@ html {
 
 }  
 
+@media only screen and (max-width: 721px){
+    #section-stone {
+        width: auto;
+        height: 300px; 
+    }
+
+}  
+
 /* Animation */
 .moonmove {
     animation: moonmove 1s ease-in;
