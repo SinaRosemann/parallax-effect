@@ -1,190 +1,75 @@
 /* Body */
 body {
     margin: 0px;
-    overflow-x: hidden 
-    }
+    background-color:#1d1d1d;
+    overflow: hidden;
+}
+
 
 html {
-    color: rgb(201, 201, 201);
-	font-size: 14px;
     font-family: 'Space Mono', monospace;
 	padding: 0;
 	margin: 0;
     }
-/* Font */
- h3 {
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 0 0 10px 0;
-    letter-spacing: 15px;
-    font-size: 26px;
-    }
 
-/* Sections */
-#section-background {
-    background-image: linear-gradient(to bottom right, #00027c, #000e2e);
-    background-size: cover;
-    width: 100%;
-    height: 100%;   
-    min-height: 6000px;  
-    top: 0px;   
-    text-align: center;
+h1 {
+    font-size: 10vw;
+    color: #ffffff;
+    letter-spacing: 12px;
     position: absolute;
-    will-change: transform;
+    z-index: 0;
 }
 
-#section-content {
-    width: 90%;
-    height: 100vh;
-    position: fixed;
-    left: 5%;
-    margin-top: 150px;
-    will-change: transform;
+h2 {
+    font-size: 8vw;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: underline;
 }
 
-#section-moon {
-    width: 100%;
-    height: 100vh;
+#section-background {
+    overflow-y:scroll;
+    overflow-x:hidden; 
+    transform: rotate(270deg) translateX(-100%);
+    transform-origin: top left;
+    width:100vh;
+    height:100vw;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+#section-background div{
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  position: relative;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+#section-background>div img, h1 {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    transform: translateX(0px);
 }
 
-#section-stone {
-    position: fixed;
-    width: 100%;
-    max-height: 500px;
-    bottom: 0px;
-    left: 0px;
+#section-background::-webkit-scrollbar { width: 0 !important }
+
+#text1 {
 
 }
 
-/* Elements */
-#moon {
-    width: 280px;
-    height: 280px;
-    position: fixed;
-    margin: 0px auto;
-    bottom: 200px;
-    right: 10%;
-    opacity: 0.6;
-}
-#section-1, #section-2, #section-3, #section-4 {
-    margin-top: 800px;
-}
-#cloudOne, #CloudFour {
-    float: right;
-}
-#CloudSix, #CloudFive {
-    float: left;
-}
+
 
 /* TABLET */
 
 @media only screen and (max-width: 992px){
-    /* Font */
-    h3 {
-        font-size: 18px;
-        letter-spacing: 11px;
-        }
 
-    /* Elements */
-    #moon {
-        width: 200px;
-        height: 200px;
-    }
-    #scroll {
-        width: 100px;
-    }
-    #section-1, #section-2, #section-3, #section-4 {
-        margin-top: 100px !important;
-    }
-    #section-stone {
-        width: 100%;
-        height: 300px; 
-    }
 
 }  
 
 /* PHONE */
 
 @media only screen and (max-width: 767px){
-    /* Font */
-    h3 {
-        font-size: 12px;
-        letter-spacing: 8px;
-        }
-    /* Sections */
-    #section-background {
-        min-height: 3000px;
-    }
 
-    
-    /* Elements */
-    #moon {
-        width: 120px;
-        height: 120px;
-    }
 
 }  
-
-@media only screen and (max-width: 721px){
-    #section-stone {
-        width: auto;
-        height: 300px; 
-    }
-
-}  
-
-/* Animation */
-.moonmove {
-    animation: moonmove 1s ease-in;
-    animation-fill-mode: forwards;
-
-    -webkit-animation: moonmove 1s ease-in;
-    -webkit-animation-fill-mode: forwards;
-    }
-
-    @keyframes moonmove {
-        0% {
-            opacity: 0.6;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-.moonback {
-    animation: moonback 1s ease-in;
-    animation-fill-mode: forwards;
-
-    -webkit-animation: moonback 1s ease-in;
-    -webkit-animation-fill-mode: forwards;
-    }
-    @keyframes moonback {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0.6;
-        }
-    }
-
-#scroll {
-    animation: scroll 2s infinite;
-    -webkit-animation: scroll 2s infinite;
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-
 
