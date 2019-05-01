@@ -1,8 +1,18 @@
+// Throttle and fire Onscroll Event
+var scrolling = false;
 var whatever = document.getElementById("section-background");
 whatever.onscroll = function() {
-    moonFunction();
+    scrolling = true;
 }
 
+setInterval( function() {
+  if ( scrolling ) {
+    scrolling = false;
+    moonFunction();
+  }
+}, 250 );
+
+// Back to initial position
 document.onwheel = function() {
     ende();
 }
@@ -13,7 +23,6 @@ var sec = document.getElementById("section-one");
 var a = 0;
 var b = 0;
 var c = 0;
-var zahl = -4.5985486469071746e-14;
 
 function moonFunction() { 
     if ((sec.getBoundingClientRect()).left < scrollPos) {
@@ -92,42 +101,3 @@ function ende() {
 
     }
 }
-
-
-/*
-function moonFunction() { 
-    if ((sec.getBoundingClientRect()).left < scrollPos) {
-            var sectionone = document.getElementById("section-one");
-            var styleone = window.getComputedStyle(sectionone);      
-            var actualposition = parseInt(styleone.getPropertyValue("transform"));
-            sectionone.style.bottom = actualposition + 10 + 'px';
-        
-            var sectiontwo = document.getElementById("section-two");
-            var styletwo = window.getComputedStyle(sectiontwo);      
-            var actualpositiontwo = parseInt(styletwo.getPropertyValue("bottom"));
-            sectiontwo.style.bottom = actualpositiontwo + 30 + 'px';
-        
-            var sectionthree = document.getElementById("section-three");
-            var stylethree = window.getComputedStyle(sectionthree);      
-            var actualpositionthree = parseInt(stylethree.getPropertyValue("bottom"));
-            sectionthree.style.bottom = actualpositionthree + 50 + 'px';
-	}else {
-            var sectionone = document.getElementById("section-one");
-            var styleone = window.getComputedStyle(sectionone);      
-            var actualposition = parseInt(styleone.getPropertyValue("bottom"));
-            sectionone.style.bottom = actualposition - 10 + 'px';
-        
-            var sectiontwo = document.getElementById("section-two");
-            var styletwo = window.getComputedStyle(sectiontwo);      
-            var actualpositiontwo = parseInt(styletwo.getPropertyValue("bottom"));
-            sectiontwo.style.bottom = actualpositiontwo - 30 + 'px';
-        
-            var sectionthree = document.getElementById("section-three");
-            var stylethree = window.getComputedStyle(sectionthree);      
-            var actualpositionthree = parseInt(stylethree.getPropertyValue("bottom"));
-            sectionthree.style.bottom = actualpositionthree - 50 + 'px';
-	// saves the new position for iteration.
-}
-scrollPos = (sec.getBoundingClientRect()).left;
-
-}*/
