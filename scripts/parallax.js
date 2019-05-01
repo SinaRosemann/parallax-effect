@@ -16,6 +16,9 @@ setInterval( function() {
 document.onwheel = function() {
     ende();
 }
+document.ontouchmove = function() {
+    ende();
+}
 
 // Initial state
 var scrollPos = 0;
