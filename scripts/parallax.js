@@ -5,6 +5,7 @@ whatever.onscroll = function() {
     scrolling = true;
 }
 
+
 setInterval( function() {
   if ( scrolling ) {
     scrolling = false;

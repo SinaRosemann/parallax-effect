@@ -44,9 +44,10 @@ h2 {
   position: relative;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+  max-height: 700px;
+  right: 7%;
 }
 #section-background>div img, h1 {
-    -webkit-transition-duration: 1s;
     transition-duration: 1s;
     transform: translateX(0px);
 }
@@ -68,9 +69,7 @@ h2 {
     #section-background>div img {
         width: 200%;
     }
-    #section-background {
-        padding-right: 100px;
-    }
+
     #section-background div {
         display: inherit;
     }
