@@ -11,7 +11,7 @@ setInterval( function() {
     scrolling = false;
     moonFunction();
   }
-}, 250 );
+}, 150 );
 
 // Back to initial position
 document.onwheel = function() {
@@ -28,6 +28,8 @@ var a = 0;
 var b = 0;
 var c = 0;
 
+
+
 function moonFunction() { 
     if ((sec.getBoundingClientRect()).left < scrollPos) {
         // First 
@@ -41,7 +43,7 @@ function moonFunction() {
         //Second 
         var sectiontwo = document.getElementById("color2");
         var texttwo = document.getElementById("text2");
-        var bplus = b + 40;
+        var bplus = b + 25;
         sectiontwo.style.transform = `translateX(${-bplus}px)`;
         texttwo.style.transform = `translateX(${-bplus}px)`;
         b = bplus;
@@ -49,7 +51,7 @@ function moonFunction() {
         //Third 
         var sectionthree = document.getElementById("color3");
         var textthree = document.getElementById("text3");
-        var cplus = c + 100;
+        var cplus = c + 50;
         sectionthree.style.transform = `translateX(${-cplus}px)`;
         textthree.style.transform = `translateX(${-cplus}px)`;
         c = cplus;
@@ -67,7 +69,7 @@ function moonFunction() {
         //Second 
         var sectiontwo = document.getElementById("color2");
         var texttwo = document.getElementById("text2");
-        var bplus = b - 40;
+        var bplus = b - 25;
         sectiontwo.style.transform = `translateX(${-bplus}px)`;
         texttwo.style.transform = `translateX(${-bplus}px)`;
         b = bplus;
@@ -75,7 +77,7 @@ function moonFunction() {
         //Third 
         var sectionthree = document.getElementById("color3");
         var textthree = document.getElementById("text3");
-        var cplus = c - 100;
+        var cplus = c - 50;
         sectionthree.style.transform = `translateX(${-cplus}px)`;
         textthree.style.transform = `translateX(${-cplus}px)`;
         c = cplus;

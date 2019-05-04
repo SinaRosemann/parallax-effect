@@ -21,12 +21,20 @@ h1 {
 }
 
 h2 {
-    font-size: 8vw;
+    font-size: 40px;
     color: #ffffff;
-    text-align: center;
     text-decoration: underline;
+    position: absolute;
+    z-index: 99999;
+    margin: 10px 0px;
+    right: 80px;
 }
+#mouse {
+    position: absolute;
+    right: 0px;
+    z-index: 99999;
 
+}
 #section-background {
     overflow-y:scroll;
     overflow-x:hidden; 
@@ -45,7 +53,7 @@ h2 {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   max-height: 700px;
-  right: 7%;
+  right: 8%;
 }
 #section-background>div img, h1 {
     transition-duration: 1s;
@@ -59,8 +67,16 @@ h2 {
 /* TABLET */
 
 @media only screen and (max-width: 992px){
-
-
+h2 {
+    font-size: 30px;
+    right: 60px;
+}
+#mouse {
+    max-height: 60px;
+}
+#section-background div {
+    right: 10%;
+}
 }  
 
 /* PHONE */
@@ -76,6 +92,9 @@ h2 {
     h1 {
         margin: 20px;
         font-size: 9vw;
+    }
+    h2 {
+        font-size: 20px;
     }
 
 }  
