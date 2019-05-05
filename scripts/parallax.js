@@ -4,12 +4,10 @@ var whatever = document.getElementById("section-background");
 whatever.onscroll = function() {
     scrolling = true;
 }
-
-
 setInterval( function() {
   if ( scrolling ) {
     scrolling = false;
-    moonFunction();
+    colorFunction();
   }
 }, 150 );
 
@@ -28,9 +26,7 @@ var a = 0;
 var b = 0;
 var c = 0;
 
-
-
-function moonFunction() { 
+function colorFunction() { 
     if ((sec.getBoundingClientRect()).left < scrollPos) {
         // First 
         var sectionone = document.getElementById("color1");
