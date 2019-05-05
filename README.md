@@ -2,4 +2,4 @@
 
 Just a simple horizontal parallax effect.
 
-<img src="/images/Parallax.png">
+<a href="https://sinarosemann.github.io/parallax-effect/"><img src="/images/Parallax.png"></a>
