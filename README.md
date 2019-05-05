@@ -2,4 +2,4 @@
 
 Just a simple horizontal parallax effect.
 
-<img src="../images/Parallax">
+<img src="/images/Parallax.png">
